@@ -8,8 +8,6 @@
 
 > Swiggy loses money every time a user opens the app, scrolls for 8 minutes, and closes it without ordering. Internal app analytics almost certainly call this "session-without-conversion." The Calendar-Aware Meal Agent eliminates that failure mode entirely by deciding *for* the user, in advance.
 
-This is the pitch Swiggy leadership will remember. Everything below is the proof.
-
 ---
 
 ## The Proposal — A New Premium Tier: *Swiggy One Pro*

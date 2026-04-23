@@ -33,8 +33,8 @@ Positioned as a premium upgrade to Swiggy's existing subscription — the tier t
 | Annual transacting users | 46.8M (FY24), up from 35.1M (FY22) | [Annual Report FY24–25](https://www.swiggy.com/corporate/wp-content/uploads/2025/07/Swiggy-Annual-Report-FY-2024-25.pdf) |
 | Food delivery orders | 577M (FY24) — implies ~12 orders/user/year on the blended base | Annual Report FY24–25 |
 | Food delivery AOV | ₹436 (Q1 FY25), up from ₹407 (FY22) | [Q2 FY25 Shareholder Letter](https://www.swiggy.com/corporate/wp-content/uploads/2024/12/Letter-to-Shareholders_Q2FY25.pdf) |
-| Instamart AOV | ₹487 → ₹527 → ₹697 → ₹746 across Q1 FY25 → Q3 FY26 | [Q2 FY26 Shareholder Letter](https://www.swiggy.com/corporate/wp-content/uploads/2025/10/Q2-FY2026-Shareholder-letter.pdf) |
-| Instamart monthly transacting users | 12.8M (Q3 FY26), up from 5.2M (Q1 FY25) | Q2 FY26 shareholder letter |
+| Instamart AOV | ₹487 → ₹527 → ₹697 → ₹746 across Q1 FY25 → Q3 FY26 | [Q3 FY26 Shareholder Letter](https://www.swiggy.com/corporate/wp-content/uploads/2026/01/Q3-FY2026-Shareholder-letter.pdf) |
+| Instamart quarterly active users | 12.8M (Q3 FY26), handling 106.4M orders; up from ~12M in Q2 FY26 | [Q3 FY26 Shareholder Letter](https://www.swiggy.com/corporate/wp-content/uploads/2026/01/Q3-FY2026-Shareholder-letter.pdf) |
 | Swiggy One membership | ~5.7M members (2025) | Annual Report FY24–25 |
 | Stated strategic aspiration | 110M users × ≥15 orders/month across verticals | Annual Report FY24–25 |
 

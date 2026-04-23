@@ -26,16 +26,30 @@ Positioned as a premium upgrade to Swiggy's existing subscription — the tier t
 
 **Indicative pricing for a pilot:** ~₹499/month, tiered above Swiggy One. This funds dual-model inference (~₹12/user/day at current rates) while capturing incremental willingness-to-pay from the segment that values time most.
 
-**Directional impact model** (to pressure-test in a closed pilot):
+### Public baselines (Swiggy disclosures)
 
-| Metric | Baseline (Swiggy One) | With Agent Tier | Delta |
-|---|---|---|---|
-| Monthly churn | ~6% | ~3% (agent lock-in) | **−3 pp** |
-| Orders per user per week | 4 | 7 (cross-vertical orchestration) | **+75%** |
-| Cross-vertical rate (% users active on 2+ verticals/week) | ~12% | ~45% | **+33 pp** |
-| Basket size | ₹380 | ₹420 | **+10%** |
+| Metric | Value | Source |
+|---|---|---|
+| Annual transacting users | 46.8M (FY24), up from 35.1M (FY22) | [Annual Report FY24–25](https://www.swiggy.com/corporate/wp-content/uploads/2025/07/Swiggy-Annual-Report-FY-2024-25.pdf) |
+| Food delivery orders | 577M (FY24) — implies ~12 orders/user/year on the blended base | Annual Report FY24–25 |
+| Food delivery AOV | ₹436 (Q1 FY25), up from ₹407 (FY22) | [Q2 FY25 Shareholder Letter](https://www.swiggy.com/corporate/wp-content/uploads/2024/12/Letter-to-Shareholders_Q2FY25.pdf) |
+| Instamart AOV | ₹487 → ₹527 → ₹697 → ₹746 across Q1 FY25 → Q3 FY26 | [Q2 FY26 Shareholder Letter](https://www.swiggy.com/corporate/wp-content/uploads/2025/10/Q2-FY2026-Shareholder-letter.pdf) |
+| Instamart monthly transacting users | 12.8M (Q3 FY26), up from 5.2M (Q1 FY25) | Q2 FY26 shareholder letter |
+| Swiggy One membership | ~5.7M members (2025) | Annual Report FY24–25 |
+| Stated strategic aspiration | 110M users × ≥15 orders/month across verticals | Annual Report FY24–25 |
 
-Even at 5% adoption among current Swiggy One subscribers in year one, reduced churn plus increased cross-vertical activity compound materially faster than the incremental subscription revenue alone.
+The gap between today's ~46.8M × ~12 orders/year blended baseline and the 110M × 15-orders/month aspiration implies **order frequency**, not user acquisition, is the binding constraint on Swiggy's growth math. An agent that orders on behalf of users attacks that constraint directly.
+
+### Agent-tier hypothesis — to validate in pilot
+
+Swiggy does not publicly disclose Swiggy One–specific churn, cross-vertical overlap, or segment-level retention. Those baselines require internal data. The pilot below is designed to measure the deltas an agent tier could produce against whatever Swiggy's actual internal baselines are:
+
+- **Orders per user per week** among agent-tier subscribers — hypothesis: ≥50% lift vs matched Swiggy One control
+- **Cross-vertical activity** (% of users transacting on 2+ of Food/Instamart/Dineout weekly) — hypothesis: ≥30 pp increase
+- **Subscription churn** through agent lock-in — hypothesis: ≥30% relative reduction
+- **Basket size** — hypothesis: ~10% increase
+
+All four are bets, not data points. The pilot's primary purpose is to replace them with Swiggy's numbers.
 
 ## Acquisition Funnel
 

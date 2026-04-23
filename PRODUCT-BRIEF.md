@@ -26,30 +26,43 @@ Positioned as a premium upgrade to Swiggy's existing subscription — the tier t
 
 **Indicative pricing for a pilot:** ~₹499/month, tiered above Swiggy One. This funds dual-model inference (~₹12/user/day at current rates) while capturing incremental willingness-to-pay from the segment that values time most.
 
-### Public baselines (Swiggy disclosures)
+### Public baselines (from Swiggy's FY24-25 Annual Report and Q3 FY26 shareholder letter)
 
 | Metric | Value | Source |
 |---|---|---|
-| Annual transacting users | 46.8M (FY24), up from 35.1M (FY22) | [Annual Report FY24–25](https://www.swiggy.com/corporate/wp-content/uploads/2025/07/Swiggy-Annual-Report-FY-2024-25.pdf) |
-| Food delivery orders | 577M (FY24) — implies ~12 orders/user/year on the blended base | Annual Report FY24–25 |
-| Food delivery AOV | ₹436 (Q1 FY25), up from ₹407 (FY22) | [Q2 FY25 Shareholder Letter](https://www.swiggy.com/corporate/wp-content/uploads/2024/12/Letter-to-Shareholders_Q2FY25.pdf) |
-| Instamart AOV | ₹487 → ₹527 → ₹697 → ₹746 across Q1 FY25 → Q3 FY26 | [Q3 FY26 Shareholder Letter](https://www.swiggy.com/corporate/wp-content/uploads/2026/01/Q3-FY2026-Shareholder-letter.pdf) |
-| Instamart quarterly active users | 12.8M (Q3 FY26), handling 106.4M orders; up from ~12M in Q2 FY26 | [Q3 FY26 Shareholder Letter](https://www.swiggy.com/corporate/wp-content/uploads/2026/01/Q3-FY2026-Shareholder-letter.pdf) |
-| Swiggy One membership | ~5.7M members (2025) | Annual Report FY24–25 |
-| Stated strategic aspiration | 110M users × ≥15 orders/month across verticals | Annual Report FY24–25 |
+| B2C orders (FY24-25) | 923M | [Annual Report FY24-25, p18](https://www.swiggy.com/corporate/wp-content/uploads/2025/07/Swiggy-Annual-Report-FY-2024-25.pdf) |
+| Average Monthly Transacting Users (FY24-25) | 17.7M | Annual Report, p18 |
+| Platform order frequency (FY24-25) | 4.43 orders/user/month | Annual Report, p18 |
+| **Platform MTU (Q3 FY26)** | **24.3M (+37% YoY)** | [Q3 FY26 Shareholder Letter, p5](https://www.swiggy.com/corporate/wp-content/uploads/2026/01/Q3-FY2026-Shareholder-letter.pdf) |
+| **Platform frequency (Q3 FY26)** | **4.04 orders/user/month — DOWN from 4.46 a year earlier** | Q3 FY26 letter, p5 |
+| Food delivery AOV (FY24-25) | ₹458 (up from ₹407 in FY22) | Annual Report, p28 |
+| Food delivery MTU (Q3 FY26) | 18.1M | Q3 FY26 letter, p6 |
+| Instamart AOV (Q3 FY26) | ₹746 (up from ₹487 in Q1 FY25) | Q3 FY26 letter, p7 |
+| Instamart MTU (Q3 FY26) | 12.8M (up from 5.2M in Q1 FY25) | Q3 FY26 letter, p7 + [Q2 FY25 letter, p7](https://www.swiggy.com/corporate/wp-content/uploads/2024/12/Letter-to-Shareholders_Q2FY25.pdf) |
+| Cross-vertical engagement | *"Over 30% of our users engage with more than one service on the platform"* | Annual Report, p32 (Instamart section) |
+| New-user cross-pollination | *"~29% of new Instamart users were new to Swiggy overall"* — meaning 71% came from the existing Food/Dineout base | Annual Report, p20 (CEO message) |
+| Swiggy One members (2025) | *"Swiggy One membership base crossed 5.7 million members"* | Annual Report, p8 |
 
-The gap between today's ~46.8M × ~12 orders/year blended baseline and the 110M × 15-orders/month aspiration implies **order frequency**, not user acquisition, is the binding constraint on Swiggy's growth math. An agent that orders on behalf of users attacks that constraint directly.
+### The key insight
+
+Two disclosed facts together form the thesis:
+
+1. **Frequency is the binding constraint, not acquisition.** Platform MTU grew 37% YoY, but orders-per-user-per-month *declined* from 4.46 to 4.04 (Q3 FY26 letter). Swiggy is adding users faster than it is getting them to order.
+
+2. **Cross-pollination is Swiggy's stated growth lever.** The CEO message explicitly credits cross-pollination from Instamart for the Food Delivery MTU acceleration. 30%+ of users are already multi-service. The compounding is there — but it's passive.
+
+An agent that reads a user's calendar and pre-plans orders across Food, Instamart, and Dineout attacks both constraints simultaneously — it raises frequency *and* actively orchestrates cross-vertical behaviour instead of waiting for it to happen organically.
 
 ### Agent-tier hypothesis — to validate in pilot
 
-Swiggy does not publicly disclose Swiggy One–specific churn, cross-vertical overlap, or segment-level retention. Those baselines require internal data. The pilot below is designed to measure the deltas an agent tier could produce against whatever Swiggy's actual internal baselines are:
+Swiggy does not publicly disclose Swiggy One–specific churn or segment-level retention; those require internal data. The pilot below is designed to measure the deltas an agent tier could produce against Swiggy's own baselines:
 
-- **Orders per user per week** among agent-tier subscribers — hypothesis: ≥50% lift vs matched Swiggy One control
-- **Cross-vertical activity** (% of users transacting on 2+ of Food/Instamart/Dineout weekly) — hypothesis: ≥30 pp increase
-- **Subscription churn** through agent lock-in — hypothesis: ≥30% relative reduction
-- **Basket size** — hypothesis: ~10% increase
+- **Orders per user per month** among agent-tier subscribers — hypothesis: reverse the frequency decline; lift to ≥6 (vs 4.04 Q3 FY26 platform average)
+- **Multi-service engagement rate** — hypothesis: lift the disclosed 30%+ baseline to ≥60% *weekly* cross-vertical activity (not just any-time overlap)
+- **Subscription churn** via agent lock-in — hypothesis: ≥30% relative reduction vs matched Swiggy One control
+- **Basket size uplift** — hypothesis: ~10% increase, especially on Instamart (already trending up at 40% YoY from ₹534 → ₹746 AOV)
 
-All four are bets, not data points. The pilot's primary purpose is to replace them with Swiggy's numbers.
+All four are bets. The pilot's purpose is to replace them with Swiggy's numbers.
 
 ## Acquisition Funnel
 

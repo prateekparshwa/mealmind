@@ -24,7 +24,9 @@ Swiggy owns all three verticals that busy users juggle — Food, Instamart, Dine
 
 Positioned as a premium upgrade to Swiggy's existing subscription — the tier this agent naturally slots into. The target segment, busy professionals already spending ₹8–30k/month on Swiggy, has high willingness to pay for autonomy, because their constraint is time, not rupees.
 
-**Indicative pricing for a pilot:** ~₹499/month, tiered above Swiggy One. This funds dual-model inference (~₹12/user/day at current rates) while capturing incremental willingness-to-pay from the segment that values time most.
+**Indicative pricing for a pilot:** ~₹499/month, tiered above Swiggy One. Inference cost ranges ₹1.50–8 per user per day depending on interactivity*, leaving 50–90% of subscription revenue for customer acquisition, Swiggy's subscription margin, and platform profit pool.
+
+<small>\* At [current Anthropic pricing](https://claude.com/pricing) (Haiku 4.5: $1/$5 per M input/output; Sonnet 4.6: $3/$15 per M input/output). A once-per-day morning digest costs ~$0.017 ≈ ₹1.50; an interactive pattern with ~5 daily runs for user edits and replans costs ~$0.09 ≈ ₹7.50. Prompt caching (enabled in the prototype) can further reduce costs by up to 90% on repeated system prompts.</small>
 
 ### Public baselines (from Swiggy's FY24-25 Annual Report and Q3 FY26 shareholder letter)
 

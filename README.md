@@ -1,19 +1,16 @@
-# MealMind — Calendar-Aware Meal Agent for Swiggy
+# MealMind — Calendar-Aware Meal Agent
 
-> Swiggy loses money every time a user opens the app, scrolls for 8 minutes, and closes without ordering. MealMind eliminates that failure mode by deciding *for* the user, in advance — orchestrating Food, Instamart, and Dineout around the user's calendar.
+A proactive food agent that reads your calendar and orchestrates Swiggy Food, Instamart, and Dineout around your day. Each morning it sends a one-tap WhatsApp digest of the day's food plan — ordering breakfast before standups, booking Dineout for client dinners, pausing Instamart during travel weeks.
 
-**Submitted for [Swiggy Builders Kitchen](https://mcp.swiggy.com/builders/#about), April 2026.**
+**Submitted for [Swiggy Builders Kitchen](https://mcp.swiggy.com/builders/#about).**
 
-**What this repo contains:**
-- `agent.py` — working prototype of the dual-model intent router (Haiku 4.5 classifier + Sonnet 4.6 planner) with a progressive-autonomy confidence gate.
-- `SWIGGY-ONE-PRO-NARRATIVE.md` — business case for a ₹499/month Swiggy One Pro tier that bundles this agent, with retention math and cross-MCP revenue hypothesis.
-- `IDEATION.md` — multi-perspective PM/Designer/Engineer ideation that led to the shortlist.
+**Start here:** [`PRODUCT-BRIEF.md`](./PRODUCT-BRIEF.md) — problem, monetization path, pilot design, risks, roadmap.
 
-**Author:** Prateek Parshwa ([LinkedIn](https://www.linkedin.com/in/prateekparshwa)) — Product Manager, built with Claude Code.
+**Author:** Prateek Parshwa — [LinkedIn](https://www.linkedin.com/in/prateekparshwa).
 
 ---
 
-## The Prototype
+## Prototype
 
 A runnable demo of the dual-model intent router with progressive autonomy.
 

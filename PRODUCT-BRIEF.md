@@ -24,9 +24,20 @@ Swiggy owns all three verticals that busy users juggle — Food, Instamart, Dine
 
 Positioned as a premium upgrade to Swiggy's existing subscription — the tier this agent naturally slots into. The target segment, busy professionals already spending ₹8–30k/month on Swiggy, has high willingness to pay for autonomy, because their constraint is time, not rupees.
 
-**Indicative pricing for a pilot:** ~₹499/month, tiered above Swiggy One. Inference cost ranges ₹1.50–8 per user per day depending on interactivity*, leaving 50–90% of subscription revenue for customer acquisition, Swiggy's subscription margin, and platform profit pool.
+**Indicative pricing for a pilot:** ~₹499/month, tiered above Swiggy One. Inference cost is single-digit rupees per user per day — the sensitivity is more to *provider choice* than to usage pattern.
 
-<small>\* At [current Anthropic pricing](https://claude.com/pricing) (Haiku 4.5: $1/$5 per M input/output; Sonnet 4.6: $3/$15 per M input/output). A once-per-day morning digest costs ~$0.017 ≈ ₹1.50; an interactive pattern with ~5 daily runs for user edits and replans costs ~$0.09 ≈ ₹7.50. Prompt caching (enabled in the prototype) can further reduce costs by up to 90% on repeated system prompts.</small>
+**Cost comparison across providers** (single-run morning digest workload: ~1,300/300 classifier tokens + ~1,700/600 planner tokens):
+
+| Provider stack | Per-user/day | Per-user/month | Notes |
+|---|---|---|---|
+| Google Gemini 2.0 Flash + Pro | ~₹0.45 | ~₹13 | Cheapest mainstream; strong context handling |
+| OpenAI GPT-4o-mini + GPT-4o | ~₹0.90 | ~₹27 | Native MCP support; mature reliability |
+| **Anthropic Haiku 4.5 + Sonnet 4.6** *(prototype)* | **~₹1.50** | **~₹45** | Best-in-class instruction following and tool use |
+| Open-source (Llama 3.3 70B via Groq) | ~₹0.20 | ~₹6 | ~85% quality of flagship models; lowest cost |
+
+Interactive workloads (5 runs/day for user edits and replans) scale the above ~5×. Even at the heaviest realistic usage on the most expensive stack, per-user monthly inference stays under ₹250 — roughly 50% of the ₹499 subscription fee, leaving ample margin for Swiggy's own economics.
+
+**Architecture note.** The prototype uses Anthropic for highest demo quality, but the dual-model pattern is **provider-agnostic**. A production deployment routes through an AI gateway (Vercel AI Gateway, OpenRouter, or LiteLLM) so providers can be swapped on cost, latency, or data-residency grounds without code changes.
 
 ### Public baselines (from Swiggy's FY24-25 Annual Report and Q3 FY26 shareholder letter)
 
@@ -101,7 +112,7 @@ A 4-week closed pilot with ~500 Swiggy subscribers upgraded to a free preview. T
 | Users resist proactive ordering | Progressive autonomy — agent starts as *suggest-only* and earns auto-execute rights as the user's override rate drops. |
 | Cannibalizes high-margin discovery orders | Agent never removes user-initiated ordering; it only adds calendar-aligned orders on top. |
 | Calendar OAuth friction kills the funnel | WhatsApp-first onboarding; defer OAuth until after first value demonstration. |
-| Model costs erode subscription margin | Dual-model split — Haiku 4.5 for cheap event classification, Sonnet 4.6 only for high-stakes planning — keeps inference ~₹12/user/day. |
+| Model costs erode subscription margin | Dual-model split (cheap classifier + high-quality planner) keeps inference in the single-digit-rupees range per user per day. Gateway architecture allows swapping providers — Gemini or open-source routes cut cost by 70–90% vs the prototype's Anthropic stack. |
 
 ## Roadmap
 

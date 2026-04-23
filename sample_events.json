@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Morning standup",
+    "start": "2026-04-24T09:00:00",
+    "end": "2026-04-24T09:30:00",
+    "attendees": ["team@company.com"],
+    "location": ""
+  },
+  {
+    "title": "PRD review with design",
+    "start": "2026-04-24T10:00:00",
+    "end": "2026-04-24T11:30:00",
+    "attendees": ["design@company.com", "pm@company.com"],
+    "location": "Zoom"
+  },
+  {
+    "title": "1:1 with Priya",
+    "start": "2026-04-24T12:00:00",
+    "end": "2026-04-24T13:00:00",
+    "attendees": ["priya@company.com"],
+    "location": ""
+  },
+  {
+    "title": "Gym - leg day",
+    "start": "2026-04-24T18:00:00",
+    "end": "2026-04-24T19:00:00",
+    "attendees": [],
+    "location": "Cult Koramangala"
+  },
+  {
+    "title": "Client dinner - Acme Corp leadership",
+    "start": "2026-04-24T20:00:00",
+    "end": "2026-04-24T22:00:00",
+    "attendees": ["raj@acmecorp.com", "neha@acmecorp.com", "self@company.com"],
+    "location": "Indiranagar"
+  },
+  {
+    "title": "Board prep review",
+    "start": "2026-04-25T09:00:00",
+    "end": "2026-04-25T12:00:00",
+    "attendees": ["ceo@company.com", "cfo@company.com"],
+    "location": ""
+  },
+  {
+    "title": "Flight to Mumbai",
+    "start": "2026-04-26T07:00:00",
+    "end": "2026-04-26T09:30:00",
+    "attendees": [],
+    "location": "BLR airport"
+  },
+  {
+    "title": "Offsite planning session",
+    "start": "2026-04-26T14:00:00",
+    "end": "2026-04-26T18:00:00",
+    "attendees": ["leadership@company.com"],
+    "location": "Trident BKC"
+  },
+  {
+    "title": "Yoga class",
+    "start": "2026-04-27T07:00:00",
+    "end": "2026-04-27T08:00:00",
+    "attendees": [],
+    "location": "Cure.Fit"
+  },
+  {
+    "title": "Nothing scheduled",
+    "start": "2026-04-27T19:00:00",
+    "end": "2026-04-27T21:00:00",
+    "attendees": [],
+    "location": ""
+  }
+]

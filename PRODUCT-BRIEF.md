@@ -22,9 +22,36 @@ Swiggy owns all three verticals that busy users juggle — Food, Instamart, Dine
 
 ## Monetization Path
 
-Positioned as a premium upgrade to Swiggy's existing subscription. The target segment — busy professionals already spending ₹8–30k/month on Swiggy — has high willingness to pay for autonomy, because their constraint is time, not rupees.
+Positioned as a premium upgrade to Swiggy's existing subscription — the tier this agent naturally slots into. The target segment, busy professionals already spending ₹8–30k/month on Swiggy, has high willingness to pay for autonomy, because their constraint is time, not rupees.
 
-Indicative pricing for a pilot: ~₹499/month, tiered above Swiggy One. This funds dual-model inference (~₹12/user/day at current rates) while capturing incremental willingness-to-pay from the segment that values time most.
+**Indicative pricing for a pilot:** ~₹499/month, tiered above Swiggy One. This funds dual-model inference (~₹12/user/day at current rates) while capturing incremental willingness-to-pay from the segment that values time most.
+
+**Directional impact model** (to pressure-test in a closed pilot):
+
+| Metric | Baseline (Swiggy One) | With Agent Tier | Delta |
+|---|---|---|---|
+| Monthly churn | ~6% | ~3% (agent lock-in) | **−3 pp** |
+| Orders per user per week | 4 | 7 (cross-vertical orchestration) | **+75%** |
+| Cross-vertical rate (% users active on 2+ verticals/week) | ~12% | ~45% | **+33 pp** |
+| Basket size | ₹380 | ₹420 | **+10%** |
+
+Even at 5% adoption among current Swiggy One subscribers in year one, reduced churn plus increased cross-vertical activity compound materially faster than the incremental subscription revenue alone.
+
+## Acquisition Funnel
+
+All three entry points live inside Swiggy's existing stack — no new acquisition spend required.
+
+1. **Renewal upsell.** Offered to Swiggy One users approaching month-3 renewal. *"Try the agent free for 14 days — let it plan your week."*
+2. **Calendar-integration prompt.** Users who grant calendar access enter an upgrade flow.
+3. **Reactivation.** Users who haven't ordered in 14+ days get a WhatsApp invite to a 7-day agent trial.
+
+## Competitive Moat
+
+No other Indian commerce platform — Zomato, Zepto, Blinkit, BigBasket — has a proactive, calendar-aware agent today. First-mover advantage establishes three defensible layers:
+
+- **Data moat.** Each week of agent usage generates proprietary training data on food-vs-calendar decisions that competitors cannot replicate without a matching install base.
+- **Habit moat.** Once the morning food digest is a daily ritual, a competitor must match both agent quality *and* the subscription tier benefits to dislodge it — a 2-year catch-up minimum.
+- **Narrative moat.** Swiggy becomes the commerce company building the agent future — a positioning useful well beyond food.
 
 ## Proposed Pilot Design
 

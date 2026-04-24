@@ -26,16 +26,18 @@ Positioned as a premium upgrade to Swiggy's existing subscription — the tier t
 
 **Indicative pricing for a pilot:** ~₹499/month, tiered above Swiggy One. Inference cost is single-digit rupees per user per day — the sensitivity is more to *provider choice* than to usage pattern.
 
-**Cost comparison across providers** (single-run morning digest workload: ~1,300/300 classifier tokens + ~1,700/600 planner tokens):
+**Cost comparison across providers** (single-run morning digest, measured against the prototype's actual prompts and a 10-event sample calendar — ~745 input + 389 output tokens for the classifier, ~917 input + 403 output tokens for the planner):
 
-| Provider stack | Per-user/day | Per-user/month | Notes |
+| Provider stack | Per-user/day | Per-user/month (30 days) | Notes |
 |---|---|---|---|
-| Google Gemini 2.0 Flash + Pro | ~₹0.45 | ~₹13 | Cheapest mainstream; strong context handling |
-| OpenAI GPT-4o-mini + GPT-4o | ~₹0.90 | ~₹27 | Native MCP support; mature reliability |
-| **Anthropic Haiku 4.5 + Sonnet 4.6** *(prototype)* | **~₹1.50** | **~₹45** | Best-in-class instruction following and tool use |
-| Open-source (Llama 3.3 70B via Groq) | ~₹0.20 | ~₹6 | ~85% quality of flagship models; lowest cost |
+| Google Gemini 2.0 Flash + Pro | ~₹0.30 | ~₹9 | Cheapest mainstream; strong context handling |
+| OpenAI GPT-4o-mini + GPT-4o | ~₹0.55 | ~₹17 | Native MCP support; mature reliability |
+| **Anthropic Haiku 4.5 + Sonnet 4.6** *(prototype)* | **~₹1.00** | **~₹30** | Best-in-class instruction following and tool use |
+| Open-source (Llama 3.3 70B via Groq) | ~₹0.10 | ~₹3 | ~85% quality of flagship models; lowest cost |
 
-Interactive workloads (5 runs/day for user edits and replans) scale the above ~5×. Even at the heaviest realistic usage on the most expensive stack, per-user monthly inference stays under ₹250 — roughly 50% of the ₹499 subscription fee, leaving ample margin for Swiggy's own economics.
+<small>Token counts derived from a char-to-token heuristic (~3.7 chars/token for mixed English + JSON, ±10–15%). Exact counts would use the provider's token-counting endpoint; the relative ranking and order of magnitude are not sensitive to that margin of error.</small>
+
+Interactive workloads (5 runs/day for user edits and replans) scale the above ~5×. Even at the heaviest realistic usage on the most expensive stack, per-user monthly inference stays under **₹150** — roughly 30% of the ₹499 subscription fee, leaving ample margin for Swiggy's own economics.
 
 **Architecture note.** The prototype uses Anthropic for highest demo quality, but the dual-model pattern is **provider-agnostic**. A production deployment routes through an AI gateway (Vercel AI Gateway, OpenRouter, or LiteLLM) so providers can be swapped on cost, latency, or data-residency grounds without code changes.
 
